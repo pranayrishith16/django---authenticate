@@ -126,5 +126,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGIN_URL = '/accounts/login'
 LOGIN_REDIRECT_URL = '/home'
 CRISPY_TEMPLATE_PACK = 'uni_form'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    
+    ]
+
+AUTH_USER_MODEL = 'userAuth.AuthUser'
