@@ -1,9 +1,13 @@
 from django.db import models
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 from django.contrib.auth.models import AbstractUser, AbstractBaseUser, PermissionsMixin
 from django.utils import timezone
 >>>>>>> Stashed changes
+=======
+from django.contrib.auth.models import BaseUserManager
+>>>>>>> 91de98166439287543f30de0caf4fa46a6bef607
 
 from .managers import CustomUserManager
 
